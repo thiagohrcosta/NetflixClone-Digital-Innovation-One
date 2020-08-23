@@ -23,3 +23,6 @@ Projeto desenvolvido durante o Lab "*Recriando a Interface do Netflix*" da **Dig
 - Elaboração do frontend;
 - Estilização com CSS;
 - Adição de "*carousel*" responsivo;
+
+## Certificado de Conclusão
+![Certificado](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/img/imgReadme/certificadoDigitalInnovationOne.png?raw=true)
