@@ -2,7 +2,7 @@
 
 ![NetflixClone](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/img/imgReadme/mytrailers1.png?raw=true)
 
-Projeto desenvolvido durante o Lab "*Recriando a Interface do Netflix*" da **Digital Innovation One**, com o objetivo de se desenvolver habilidades inicialmente no frontend, aprendendo conceitos básicos sobre HTML, CSS, Javascript e JQuery.
+Projeto desenvolvido durante o Lab "*Recriando a Interface do Netflix*" da **Digital Innovation One**, com o objetivo de se desenvolver habilidades inicialmente no frontend, aprendendo conceitos básicos sobre HTML, CSS, Javascript e JQuery, em especial como estruturar um layout, técnicas de CSS3 com containers e variáveis, como posicionar os elementos com Flexbox e como utilizar plugins Jquery a favor da aplicação.
 
 ## Tecnologias utilizadas
 - HTML;
