@@ -23,6 +23,11 @@ Projeto desenvolvido durante o Lab "*Recriando a Interface do Netflix*" da **Dig
 ## Mobile Version
 ![mobile1](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/mytrailersMob1.png?raw=true) 
 
+## Adição de conteúdo de forma dinâmica
+Ainda que não faça parte do conteúdo exigido pela **Digital Innovation One** para a conclusão do presente curso focado exclusivamente no frontend, foi inserida a opção de adicionar conteúdos de maneira dinâmica ao site, sendo tal conteúdo integrado por meio do MongoDB Atlas.
+![adding content](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/mytrailers5.png?raw=true)
+Ao receber as informações inseridas pelo usuário o backend envia as informações para o banco de dados em nuvem, que posteriormente servem para nutrir o conteúdo da página principal.
+![mongoDB](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/mongoDB1.png?raw=true)
 ## Etapas de produção
 **22 de agosto, 2020 - Frontend**
 - Criação do projeto;
