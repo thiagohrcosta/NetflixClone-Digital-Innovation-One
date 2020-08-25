@@ -1,0 +1,21 @@
+<%- include('./mainContent/header'); %>
+
+<%- include('./mainContent/newsOn'); %>
+
+<h1 class="titleSeries">TV Shows</h1>
+
+<div class="carrousel-filmes">
+  <div class="owl-carousel owl-theme">
+    <% posts.forEach(function(post){ %>
+      <div class="item">
+        <img class="box-filme" src="<%= post.coverBox %>" alt="">
+      </div>
+    <% }) %>
+  </div>
+</div>
+
+
+
+
+
+<%- include('./mainContent/footer'); %>

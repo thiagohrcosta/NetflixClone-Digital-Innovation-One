@@ -1,0 +1,49 @@
+<%- include("./mainContent/header"); -%>
+
+<div class="container">
+
+  <div class="row boxAddContent">
+    
+    <div class="col-lg-6">
+      <section class="addContentImg" style="background: url(https://source.unsplash.com/collection/12168151/500x500) no-repeat center center / cover"></section>
+    </div>
+    <div class="col-lg-6">
+
+      <h1>Adding Content</h1>
+      
+      <form action="/postcontent" method="POST">
+      
+        <div class="form-group">
+          
+          <p>Title:</p>
+          <input type="text" name="postTitle">
+      
+          <p>IMDB Rating:</p>
+          <input type="text" name="imdbRating">
+      
+          <p>Poster:</p>
+          <input type="text" name="coverBox">
+      
+          <p>Main Actor:</p>
+          <input type="text" name="mainActor">
+      
+          <p>Launch year:</p>
+          <input type="text" name="launchYear">
+      
+          <p>Youtube Trailer:</p>
+          <input type="text" name="youtubeTrailer">
+      
+      
+        </div>
+      
+        <button type="submit">Post Content</button>
+      
+      </form>
+    </div>
+
+
+    
+  </div>
+</div>
+
+<%- include("./mainContent/footer"); -%>
