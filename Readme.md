@@ -25,9 +25,8 @@ Posteriormente desenvolvi o **backend** utilizando conhecimentos já adquiridos 
 - Heroku
  
 ## Mobile Version
-![mobile1](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/mytrailers13.png?raw=true) 
 
-![enter image description here](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/mytrailers15.png?raw=true)
+![alt-text-1](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/mytrailers13.png?raw=true) ![alt-text-2](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/mytrailers15.png?raw=true)
 ## Adição de conteúdo de forma dinâmica
 Ainda que não faça parte do conteúdo exigido pela **Digital Innovation One** para a conclusão do presente curso focado exclusivamente no frontend, foi inserida a opção de adicionar conteúdos de maneira dinâmica ao site, sendo tal conteúdo integrado por meio do MongoDB Atlas.
 ![adding content](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/mytrailers5.png?raw=true)
