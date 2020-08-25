@@ -4,7 +4,7 @@
 
 Projeto desenvolvido durante o Lab "_Recriando a Interface do Netflix_" da  **Digital Innovation One**, com o objetivo de se desenvolver habilidades inicialmente no frontend, aprendendo conceitos básicos sobre HTML, CSS, Javascript e JQuery, em especial como estruturar um layout, técnicas de CSS3 com containers e variáveis, como posicionar os elementos com Flexbox e como utilizar plugins Jquery a favor da aplicação. 
 
-Posteriormente desenvolvi o **backend** utilizando conhecimentos já adquiridos visando habilitar uma conexão com o **MongoDB Atlas** permitindo realizar o *CRUD*. Uma vez que o backend foi regularmente desenvolvido e o banco de dados criados, realizei o deploy da aplicação no Heroku.
+Posteriormente desenvolvi o **backend** utilizando conhecimentos já adquiridos visando habilitar uma conexão com o **MongoDB Atlas**, permitindo assim realizar o *CRUD*. Uma vez que o backend foi regularmente desenvolvido e o banco de dados criado, realizei o deploy da aplicação no Heroku.
 ![enter image description here](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/mytrailers2.png?raw=true)
 ## Tecnologias utilizadas - Frontend
 - HTML;
