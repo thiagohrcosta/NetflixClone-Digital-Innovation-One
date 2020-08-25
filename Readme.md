@@ -36,4 +36,4 @@ Projeto desenvolvido durante o Lab "*Recriando a Interface do Netflix*" da **Dig
 - Instalação do Mongoose e conexão com MongoDB Atlas;
 
 ## Certificado de Conclusão
-![Certificado](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/img/imgReadme/certificadoDigitalInnovationOne.png?raw=true)
+![Certificado](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/certificadoDigitalInnovationOne.png?raw=true)
