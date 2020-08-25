@@ -9,6 +9,7 @@ Projeto desenvolvido durante o Lab "*Recriando a Interface do Netflix*" da **Dig
 - HTML;
 - CSS;
 - JavaScript;
+- Bootstrap
 - JQuery;
 - Live-server.
 
