@@ -20,6 +20,8 @@ Projeto desenvolvido durante o Lab "*Recriando a Interface do Netflix*" da **Dig
 - Express;
 - Mongoose
 - Nodemon
+## Tecnologias utilizadas - Nuvem
+- Heroku
  
 ## Mobile Version
 ![mobile1](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/mytrailers13.png?raw=true) 
@@ -41,6 +43,14 @@ Ao receber as informações inseridas pelo usuário o backend envia as informaç
 - Criação da aplicação em NodeJS;
 - Instalação do: body-parser; ejs; express; nodemon;
 - Instalação do Mongoose e conexão com MongoDB Atlas;
+
+**25 de agosto, 2020 - Nuvem**
+- Desenvolvimento de aplicação em nuvem com Heroku;
+- Deply da aplicação.
+
+## Veja a aplicação rodando
+Para visualizar esta aplicação rodando em tempo real, basta acessar o projeto no Heroku [clicando aqui](https://gentle-depths-01574.herokuapp.com/).
+
 
 ## Certificado de Conclusão
 ![Certificado](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/certificadoDigitalInnovationOne.png?raw=true)
