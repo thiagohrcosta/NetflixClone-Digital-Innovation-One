@@ -108,6 +108,12 @@ header nav a:hover{
   display: block;
 }
 
+.box-filme:hover{
+  opacity: 0.8;
+
+
+}
+
 .carrosel-filmes{
   margin-top: 5px;
 }
@@ -170,4 +176,27 @@ i:hover{
 
 .boxAddContent button:hover{
   background-color: var(--vermelho);
+}
+
+/* MOVIE DISPLAY */
+
+.coverBoxShowContent{
+  width: 95%;
+}
+
+.ratingContentBox{
+  padding: 15px;
+  align-items: center;
+}
+.ratingBox{
+  padding: 16px;
+  text-align: center;
+  align-items: center;
+  background: #f3c623;
+  color: black;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  font-weight: bold;
+  text-decoration: underline;
 }

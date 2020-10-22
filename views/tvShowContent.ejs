@@ -1,11 +1,31 @@
-<%- include("./mainContent/header"); -%>
+<%- include('./mainContent/header'); %>
 
-  <div class="carrosel-filmes">
-    <h1 class="titleSeries">Séries</h1>
-    <div class="owl-carousel owl-theme">
-      <div class="item">
-        <img class="box-filme" src="<%= post.coverBox %>" alt="">
+<div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img class="coverBoxShowContent" src="<%= coverBox %>" alt="<%= title %>" srcset="">
+      </div>
+      <div class="col">
+        <h1><%= title %> (<%= launchYear %>)</h1>
+        <div class="row ratingContentBox">
+          <div class="col">
+            <h1>Users rating:</h1>
+          </div>
+          <div class="col">
+            <h1 class="ratingBox"><%= rating %></h1>
+          </div>
+        </div>
+        <div>
+          <p>
+            <h2>Sinopse:</h2>
+            <%= sinopse %>
+          </p>
+        </div>
+        </div>
+
       </div>
     </div>
+</div>
 
 <%- include("./mainContent/footer"); -%>

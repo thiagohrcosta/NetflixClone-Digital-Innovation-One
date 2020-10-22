@@ -46,7 +46,7 @@ Ao receber as informações inseridas pelo usuário o backend envia as informaç
 
 **25 de agosto, 2020 - Nuvem**
 - Desenvolvimento de aplicação em nuvem com Heroku;
-- Deply da aplicação.
+- Deploy da aplicação.
 
 ## Veja a aplicação rodando
 Para visualizar esta aplicação rodando em tempo real, basta acessar o projeto no Heroku [clicando aqui](https://gentle-depths-01574.herokuapp.com/).

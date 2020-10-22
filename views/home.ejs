@@ -7,9 +7,15 @@
 <div class="carrousel-filmes">
   <div class="owl-carousel owl-theme">
     <% posts.forEach(function(post){ %>
+      
+      <a href="/postcontent/<%= post._id%>">
       <div class="item">
         <img class="box-filme" src="<%= post.coverBox %>" alt="">
+
+         
+        
       </div>
+    </a>
     <% }) %>
   </div>
 </div>
