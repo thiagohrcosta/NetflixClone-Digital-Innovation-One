@@ -29,10 +29,20 @@ const postSchema = {
   launchYear: String,
   youtubeTrailer: String,
   sinopse: String,
-
 }
 
+const movieSchema = {
+  title: String,
+  rating: Number,
+  coverBox: String,
+  mainActor: String,
+  launchYear: String,
+  youtubeTrailer: String,
+  sinopse: String,
+}
 const Post = mongoose.model("Post", postSchema);
+const MoviePost = mongoose.model("MoviePost", postSchema);
+
 
 app.get("/", function(req, res){
   
@@ -44,6 +54,10 @@ app.get("/", function(req, res){
 })
 
 app.get("/postcontent", function(req, res){
+  res.render("postcontent");
+})
+
+app.get('/postMovie', function(req, res){
   res.render("postcontent");
 })
 
@@ -59,6 +73,24 @@ app.post("/postcontent", function(req, res){
   });
 
   post.save(function(err){
+    if(!err){
+      res.redirect("/");
+    }
+  })
+})
+
+app.post("/postMovie", function(req, res){
+  const moviePost = new MoviePost({
+    title: req.body.postTitle,
+    rating: req.body.imdbRating,
+    coverBox: req.body.coverBox,
+    mainActor: req.body.mainActor,
+    launchYear: req.body.launchYear,
+    youtubeTrailer: req.body.youtubeTrailer,
+    sinopse: req.body.postSinopse
+  });
+
+  moviePost.save(function(err){
     if(!err){
       res.redirect("/");
     }
