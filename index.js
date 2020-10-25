@@ -14,6 +14,8 @@ app.use(express.static("public"));
 app.use(express.static(__dirname + '/public/js'));
 app.use(express.static(__dirname + '/public/js/owl'))
 
+app.use(express.static(__dirname + '/public/img'));
+
 app.use(express.static("style"));
 app.use(express.static(__dirname + '/style'));
 
@@ -25,6 +27,7 @@ mongoose.connect("mongodb+srv://admin-app:123456app@movieapi.z0kfu.mongodb.net/m
 
 const postSchema = {
   title: String,
+  watch: String,
   rating: Number,
   coverBox: String,
   mainActor: String,
@@ -62,6 +65,7 @@ app.get('/postMovie', function(req, res){
 app.post("/postcontent", function(req, res){
   const post = new Post({
     title: req.body.postTitle,
+    watch: req.body.postWatch,
     kind: req.body.postKind,
     gender: req.body.postGender,
     rating: req.body.imdbRating,
@@ -98,6 +102,7 @@ app.get("/postcontent/:id", function(req, res){
   Post.findOne({_id: requestedPostId}, function(err, post){
     res.render("tvShowContent", {
       title: post.title,
+      watch: post.watch,
       kind: post.kind,
       gender: post.gender,
       rating: post.rating,

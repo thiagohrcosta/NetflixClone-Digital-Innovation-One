@@ -8,6 +8,15 @@
       </div>
       <div class="col">
         <h1><%= title %> (<%= launchYear %>)</h1>
+        <% if(watch == 'HBO'){ %>
+          <p> Watch on: <span class="hboClass">HBO</span></p>
+        <% } else if(watch == 'Netflix') {%>
+          <p> Watch on: <span class="netflixClass">NETFLIX</span></p>
+        <% } else if(watch == 'Amazon Prime') { %>
+          <p> Watch on: <span class="amazonClass">AMAZON PRIME</span></p>
+        <%} else {%>
+          <p></p>
+        <%}%>
         <div class="row ratingContentBox">
           <div class="col">
             <h1>Users rating:</h1>

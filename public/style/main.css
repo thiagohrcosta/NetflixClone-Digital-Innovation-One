@@ -215,10 +215,24 @@ i:hover{
   max-height: 340px;
 }
 
+.hboClass{
+  color: #fff;
+  font-weight: bold;
+}
+
+.netflixClass{
+  color: red;
+  font-weight: bold;
+}
+
+.amazonClass{
+  color: lightskyblue;
+  font-weight: bold;
+}
 
 /* MEDIA QUERY */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   header .headerContainer{
     display: block !important;
   }
@@ -232,6 +246,7 @@ i:hover{
 
   h1{
     text-align: center;
+    width: 100%;
   }
 
   .profileActorPhoto{
@@ -240,6 +255,17 @@ i:hover{
 
   h2{
     text-align: center;
+  }
+
+  .actorNameDisplay{
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  footer{
+    margin-left: 7%;
+
+    width: 85%;
   }
 
 }
