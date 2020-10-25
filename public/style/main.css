@@ -200,3 +200,46 @@ i:hover{
   font-weight: bold;
   text-decoration: underline;
 }
+
+.hr-line{
+  background-color: #AAA;
+}
+
+.actorNameDisplay{
+  font-size: 22px;
+}
+
+.profileActorPhoto{
+  border-radius: 10px;
+  max-width: 210px;
+  max-height: 340px;
+}
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 800px) {
+  header .headerContainer{
+    display: block !important;
+  }
+  .coverBoxShowContent{
+    align-content: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 310px;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .profileActorPhoto{
+    margin-left: 16%;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+}

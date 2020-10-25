@@ -19,38 +19,36 @@ app.use(express.static(__dirname + '/style'));
 
 app.use(express.static(__dirname + '/style/owl'));
 
-mongoose.connect("mongodb+srv://admin-app:123456app@movieapi.z0kfu.mongodb.net/movietrailer", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-app:123456app@movieapi.z0kfu.mongodb.net/movietrailer", 
+{  useNewUrlParser: true,
+  useUnifiedTopology: true});
 
 const postSchema = {
   title: String,
   rating: Number,
   coverBox: String,
   mainActor: String,
+  actorPhoto: String,
   launchYear: String,
   youtubeTrailer: String,
   sinopse: String,
+  gender: String,
+  kind: String,
 }
 
-const movieSchema = {
-  title: String,
-  rating: Number,
-  coverBox: String,
-  mainActor: String,
-  launchYear: String,
-  youtubeTrailer: String,
-  sinopse: String,
-}
+
 const Post = mongoose.model("Post", postSchema);
-const MoviePost = mongoose.model("MoviePost", postSchema);
 
 
 app.get("/", function(req, res){
   
   Post.find({}, function(err, posts){
     res.render("home", {
-      posts: posts
+      posts: posts,
     });
   })
+  
+
 })
 
 app.get("/postcontent", function(req, res){
@@ -58,15 +56,18 @@ app.get("/postcontent", function(req, res){
 })
 
 app.get('/postMovie', function(req, res){
-  res.render("postcontent");
+  res.render("movieContent");
 })
 
 app.post("/postcontent", function(req, res){
   const post = new Post({
     title: req.body.postTitle,
+    kind: req.body.postKind,
+    gender: req.body.postGender,
     rating: req.body.imdbRating,
     coverBox: req.body.coverBox,
     mainActor: req.body.mainActor,
+    actorPhoto: req.body.postActorPhoto,
     launchYear: req.body.launchYear,
     youtubeTrailer: req.body.youtubeTrailer,
     sinopse: req.body.postSinopse
@@ -79,23 +80,6 @@ app.post("/postcontent", function(req, res){
   })
 })
 
-app.post("/postMovie", function(req, res){
-  const moviePost = new MoviePost({
-    title: req.body.postTitle,
-    rating: req.body.imdbRating,
-    coverBox: req.body.coverBox,
-    mainActor: req.body.mainActor,
-    launchYear: req.body.launchYear,
-    youtubeTrailer: req.body.youtubeTrailer,
-    sinopse: req.body.postSinopse
-  });
-
-  moviePost.save(function(err){
-    if(!err){
-      res.redirect("/");
-    }
-  })
-})
 
 app.get("/postcontent", function(req, res){
   Post.find(function(err, foundItems){
@@ -114,9 +98,12 @@ app.get("/postcontent/:id", function(req, res){
   Post.findOne({_id: requestedPostId}, function(err, post){
     res.render("tvShowContent", {
       title: post.title,
+      kind: post.kind,
+      gender: post.gender,
       rating: post.rating,
       coverBox: post.coverBox,
       mainActor: post.mainActor,
+      actorPhoto: post.actorPhoto,
       launchYear: post.launchYear,
       youtubeTrailer: post.youtubeTrailer,
       sinopse: post.sinopse
