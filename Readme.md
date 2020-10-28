@@ -104,8 +104,9 @@ Ao receber as informações inseridas pelo usuário o backend envia as informaç
  ![alt-text-2](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/Screenshot_20201025-144518.jpg?raw=true)
 
 **28 de outubro, 2020 - Front-end e back-end**
-- Rotas *PUT e DELETE* adicionadas, permitindo ao usuário editar os conteúdos já publicados, ou desejando, deletá-los do banco de dados. 
-- Correções da interface front-end para aceitar as opções de PUT e DELETE.
+- Rotas *PUT e DELETE* adicionadas, permitindo ao usuário editar os conteúdos já publicados, ou desejando, deletá-los do banco de dados;
+- Correções da interface front-end para aceitar as opções de PUT e DELETE;
+- Adicionada opção exigindo confirmação para deletar um arquivo.
 ![saveAndDelete](https://github.com/thiagohrcosta/NetflixClone-Digital-Innovation-One/blob/master/filesReadme/movieEditDelete.png?raw=true)
 
 ## Veja a aplicação rodando
