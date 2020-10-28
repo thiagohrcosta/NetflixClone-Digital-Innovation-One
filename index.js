@@ -43,19 +43,15 @@ const postSchema = {
   kind: String,
 }
 
-
 const Post = mongoose.model("Post", postSchema);
-
 
 app.get("/", function(req, res){
   
-  Post.find({}, function(err, posts){
+  Post.find({}, function(err, posts, movieposts){
     res.render("home", {
       posts: posts,
     });
   })
-  
-
 })
 
 app.get("/postcontent", function(req, res){
@@ -87,7 +83,6 @@ app.post("/postcontent", function(req, res){
     }
   })
 })
-
 
 app.get("/postcontent", function(req, res){
   Post.find(function(err, foundItems){
@@ -140,9 +135,8 @@ app.get("/postcontent/:title/edit", function(req, res){
       launchYear: post.launchYear,
       youtubeTrailer: post.youtubeTrailer,
       sinopse: post.sinopse
-    })
-  })
-
+    });
+  });
 });
 
 app.put("/postcontent", function(req, res){
@@ -193,7 +187,6 @@ app.delete("/postcontent/:title", function(req, res){
     )
 
 })
-
 
 let port = process.env.PORT;
 if (port == null || port == ""){
