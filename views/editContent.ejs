@@ -117,11 +117,14 @@
       </form>
 
       <form 
+      id="form-delete"
       method="post" 
       action="/postcontent/<%= title %>?_method=DELETE">
       <input type="hidden" name="_method" value="DELETE">
       <button class="buttonDelete" type="submit">Delete</button>
     </form>
+
+    <%- include('./formDelete'); -%>
 
     </div>
  
