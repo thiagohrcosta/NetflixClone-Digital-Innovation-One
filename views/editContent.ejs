@@ -1,0 +1,123 @@
+<%- include("./mainContent/header"); -%>
+
+<div class="container">
+
+  <div class="row boxAddContent">
+    
+    <div class="col-lg-6">
+      <section class="addContentImg" style="background: url(<https://source.unsplash.com/collection/12168151/500x500>) no-repeat center center / cover"></section>
+    </div>
+    <div class="col-lg-6">
+
+      <h1>Adding Content</h1>
+      
+      <form 
+        method="POST"
+        action="/postcontent?_method=PUT">
+      
+        <div class="form-group">
+          
+          <p>Title:</p>
+          <input 
+            type="text" 
+            name="postTitle" 
+            placeholder="TV Show or Movie Title"
+            value="<%= title %>"
+            >
+          
+          <p>Watch on: </p>
+          <input 
+            type="text" 
+            name="postWatch" 
+            placeholder="HBO, Netflix, Amazon Prime, others..."
+            value="<%= watch %>"
+            > 
+        
+          <p>This title is:</p>
+          <input 
+            type="text" 
+            name="postKind" 
+            placeholder="Movie, TV Show, others"
+            value="<%= kind %>"
+            >
+      
+          <p>Gender:</p>
+          <input 
+            type="text" 
+            name="postGender" 
+            placeholder="Action, Horror, Sci-Ficiont, others"
+            value="<%= gender %>"
+            >
+      
+          <p>IMDB Rating:</p>
+          <input 
+            type="text" 
+            name="imdbRating" 
+            placeholder="9.5"
+            value="<%= rating %>"
+            >
+      
+          <p>Poster:</p>
+          <input 
+            type="text" 
+            name="coverBox" 
+            placeholder="Https://..."
+            value="<%= coverBox %>"
+            >
+      
+          <p>Main Actor:</p>
+          <input 
+            type="text" 
+            name="mainActor" 
+            placeholder="Https://..."
+            value="<%= mainActor %>"
+            >
+
+          <p>Main Actor Photo Profile:</p>
+          <input 
+            type="text" 
+            name="postActorPhoto" 
+            placeholder="Https://..."
+            value="<%= actorPhoto %>"
+            >
+      
+      
+          <p>Launch year:</p>
+          <input 
+            type="text" 
+            name="launchYear" 
+            placeholder="2020"
+            value="<%= launchYear %>"
+            >
+      
+          <p>Youtube Trailer:</p>
+          <input 
+            type="text" 
+            name="youtubeTrailer" 
+            placeholder="Https://..."
+            value="<%= youtubeTrailer %>"
+            >
+
+          <p>Sinopse</p>
+          <input 
+            type="text" 
+            name="postSinopse" 
+            placeholder="Insert the sinopse here..."
+            value="<%= sinopse %>"
+            >      
+      
+        </div>
+
+        <button type="submit">Save</button>
+        
+        <input type="hidden" name="id" value="<% title %>">
+      
+      </form>
+    </div>
+
+
+    
+  </div>
+</div>
+
+<%- include("./mainContent/footer"); -%>

@@ -115,8 +115,36 @@ app.get("/postcontent/:id", function(req, res){
     })
   })
 
+});
+
+app.get("/postcontent/:title/edit", function(req, res){
+  //const requestedPostId = req.params.id;
+  const requestedPostedTitle = req.params.title;
+  
+  console.log(requestedPostedTitle);
+
+  Post.findOne({title: requestedPostedTitle}, function(err, post){
+    res.render("editContent", {
+      title: post.title,
+      watch: post.watch,
+      kind: post.kind,
+      gender: post.gender,
+      rating: post.rating,
+      coverBox: post.coverBox,
+      mainActor: post.mainActor,
+      actorPhoto: post.actorPhoto,
+      launchYear: post.launchYear,
+      youtubeTrailer: post.youtubeTrailer,
+      sinopse: post.sinopse
+    })
+  })
 
 });
+
+app.put("/postcontent/:id", function(req, res){
+ 
+})
+
 
 let port = process.env.PORT;
 if (port == null || port == ""){
