@@ -254,6 +254,11 @@ i:hover{
   background-color: #008829 !important;
 }
 
+.buttonSubmitContent{
+  background-color: #008829 !important;
+
+}
+
 .buttonDelete{
   margin-top: 5px;
   text-transform: uppercase;
