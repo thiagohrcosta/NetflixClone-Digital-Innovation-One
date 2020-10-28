@@ -3,11 +3,15 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 const _ = require("lodash");
+const methodOverride = require('method-override');
 
 const app = express();
 
 app.set("view engine", "ejs");
 app.use(express.json());
+app.use(bodyParser.json({ type: 'application/json' }));
+
+app.use(methodOverride('_method'));
 
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(express.static("public"));
@@ -142,7 +146,46 @@ app.get("/postcontent/:title/edit", function(req, res){
 });
 
 app.put("/postcontent/:id", function(req, res){
- 
+
+  Post.update(
+    {_id: req.params.id},
+    {
+      title: req.body.title,
+      watch: req.body.watch,
+      kind: req.body.kind,
+      gender: req.body.gender,
+      rating: req.body.rating,
+      coverBox: req.body.coverBox,
+      mainActor: req.body.mainActor,
+      actorPhoto: req.body.actorPhoto,
+      launchYear: req.body.launchYear,
+      youtubeTrailer: req.body.youtubeTrailer,
+      sinopse: req.body.sinopse
+    },
+      {overwrite: true},
+      function(err){
+        if(!err){
+          res.send("Sucessfully updated article.");
+          res.redirect("/");
+        }
+      }
+      );
+});
+
+app.delete("/postcontent/:title", function(req, res){
+
+  Post.deleteOne(
+    {title: req.params.title},
+    function(err){
+      if(!err){
+        res.redirect("/");
+      }
+      else{
+        res.send(err);
+      }
+    }
+    )
+
 })
 
 
