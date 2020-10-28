@@ -111,7 +111,7 @@ Ao receber as informações inseridas pelo usuário o backend envia as informaç
 
 ## Veja a aplicação rodando
 
-Para visualizar esta aplicação rodando em tempo real, basta acessar o projeto no Heroku [clicando aqui](https://gentle-depths-01574.herokuapp.com/).
+Para visualizar esta aplicação rodando em tempo real, basta acessar o projeto no Heroku [clicando aqui](https://enigmatic-beyond-53300.herokuapp.com/).
 
   
   
